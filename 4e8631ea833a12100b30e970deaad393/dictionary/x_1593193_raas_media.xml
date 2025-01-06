@@ -11,12 +11,12 @@
         <element label="Synopsis" max_length="4000" name="synopsis" type="string"/>
         <element label="category" max_length="40" name="category" type="string"/>
         <element label="Writers" max_length="4000" name="writers" type="string"/>
-        <element label="Web Site" max_length="40" name="web_site" type="url"/>
+        <element label="Web Site" max_length="150" name="web_site" type="url"/>
         <element display="true" label="Title" max_length="250" name="title" type="string"/>
         <element default="0" label="Metascore" max_length="40" name="metascore" type="integer"/>
         <element label="IMD Rating" max_length="40" name="imd_rating" type="float"/>
         <element label="Awards" max_length="250" name="awards" type="string"/>
-        <element label="Poster" max_length="40" name="poster" type="url"/>
+        <element label="Poster" max_length="150" name="poster" type="url"/>
         <element default="0" label="Average Rating" max_length="255" name="average_rating" type="float"/>
         <element label="Country" max_length="250" name="country" type="string"/>
         <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
