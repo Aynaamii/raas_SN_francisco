@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1593193_raas.moderate" name="x_1593193_raas.moderate">9e8671ea833a12100b30e970deaad33f</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-02 20:34:12</sys_created_on>
+        <sys_id>1e8671ea833a12100b30e970deaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9e8671ea833a12100b30e970deaad33f</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_update_name>sys_embedded_help_role_1e8671ea833a12100b30e970deaad343</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-02 20:34:12</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
