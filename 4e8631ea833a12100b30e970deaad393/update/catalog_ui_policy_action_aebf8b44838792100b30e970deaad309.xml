@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
         <catalog_item display_value="Media Review">7b74f1f3833e12100b30e970deaad306</catalog_item>
-        <catalog_variable>IO:d895cec0830392100b30e970deaad32a</catalog_variable>
+        <catalog_variable>IO:560fcb04838792100b30e970deaad3d5</catalog_variable>
         <cleared>false</cleared>
         <disabled>true</disabled>
         <field/>
@@ -11,23 +11,23 @@
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-07 13:40:08</sys_created_on>
-        <sys_id>86a702c4830392100b30e970deaad388</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>sla_due</sys_name>
+        <sys_created_on>2025-01-07 18:55:03</sys_created_on>
+        <sys_id>aebf8b44838792100b30e970deaad309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Average_rating</sys_name>
         <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
-        <sys_update_name>catalog_ui_policy_action_86a702c4830392100b30e970deaad388</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-01-07 18:40:48</sys_updated_on>
+        <sys_update_name>catalog_ui_policy_action_aebf8b44838792100b30e970deaad309</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-07 18:55:03</sys_updated_on>
         <table/>
         <ui_policy display_value="show media when media select">7c678e84830392100b30e970deaad325</ui_policy>
         <value/>
         <value_action>ignore</value_action>
-        <variable>sla_due</variable>
+        <variable>Average_rating</variable>
         <variable_set/>
         <visible>true</visible>
     </catalog_ui_policy_action>
-    <sys_translated_text action="delete_multiple" query="documentkey=86a702c4830392100b30e970deaad388"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=aebf8b44838792100b30e970deaad309"/>
 </record_update>

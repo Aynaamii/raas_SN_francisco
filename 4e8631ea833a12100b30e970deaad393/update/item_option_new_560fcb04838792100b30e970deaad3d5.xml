@@ -18,7 +18,7 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path>poster</dynamic_value_dot_walk_path>
+        <dynamic_value_dot_walk_path>average_rating</dynamic_value_dot_walk_path>
         <dynamic_value_field display_value="Movie/TvShow/Episode">799cfdbb833e12100b30e970deaad39c</dynamic_value_field>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
@@ -26,7 +26,7 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
-        <hidden>true</hidden>
+        <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -42,14 +42,14 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>poster_url</name>
+        <name>Average_rating</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>130</order>
+        <order>110</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>poster_url</question_text>
+        <question_text>Average rating</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -77,16 +77,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-07 14:01:52</sys_created_on>
-        <sys_id>3d6c0e4c830392100b30e970deaad3d5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>poster_url</sys_name>
+        <sys_created_on>2025-01-07 18:53:47</sys_created_on>
+        <sys_id>560fcb04838792100b30e970deaad3d5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Average rating</sys_name>
         <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
-        <sys_update_name>item_option_new_3d6c0e4c830392100b30e970deaad3d5</sys_update_name>
+        <sys_update_name>item_option_new_560fcb04838792100b30e970deaad3d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-07 18:30:09</sys_updated_on>
+        <sys_updated_on>2025-01-07 18:57:49</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=3d6c0e4c830392100b30e970deaad3d5"/>
-    <fx_price action="delete_multiple" query="id=3d6c0e4c830392100b30e970deaad3d5"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=560fcb04838792100b30e970deaad3d5"/>
+    <fx_price action="delete_multiple" query="id=560fcb04838792100b30e970deaad3d5"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>price_if_checked</field>
-        <id>3d6c0e4c830392100b30e970deaad3d5</id>
+        <id>560fcb04838792100b30e970deaad3d5</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-07 14:01:52</sys_created_on>
-        <sys_id>84bc828c830392100b30e970deaad326</sys_id>
+        <sys_created_on>2025-01-07 18:53:47</sys_created_on>
+        <sys_id>888f0744838792100b30e970deaad3cc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-07 14:01:52</sys_updated_on>
+        <sys_updated_on>2025-01-07 18:53:47</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>rec_price_if_checked</field>
-        <id>3d6c0e4c830392100b30e970deaad3d5</id>
+        <id>560fcb04838792100b30e970deaad3d5</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-07 14:01:52</sys_created_on>
-        <sys_id>00bcc64c830392100b30e970deaad3e5</sys_id>
+        <sys_created_on>2025-01-07 18:53:47</sys_created_on>
+        <sys_id>c48f8704838792100b30e970deaad3ff</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-07 14:01:52</sys_updated_on>
+        <sys_updated_on>2025-01-07 18:53:47</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
