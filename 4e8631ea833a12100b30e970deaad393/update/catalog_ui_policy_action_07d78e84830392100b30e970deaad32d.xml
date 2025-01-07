@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Media Review">7b74f1f3833e12100b30e970deaad306</catalog_item>
+        <catalog_variable>IO:dcfd9af383fe12100b30e970deaad374</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-07 13:41:00</sys_created_on>
+        <sys_id>07d78e84830392100b30e970deaad32d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>average_rating</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_07d78e84830392100b30e970deaad32d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:49:13</sys_updated_on>
+        <table/>
+        <ui_policy display_value="show media when media select">7c678e84830392100b30e970deaad325</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>average_rating</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=07d78e84830392100b30e970deaad32d"/>
+</record_update>
