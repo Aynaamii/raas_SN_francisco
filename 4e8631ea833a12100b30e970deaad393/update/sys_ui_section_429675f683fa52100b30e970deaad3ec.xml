@@ -4,27 +4,41 @@
             <element>poster</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-03 15:12:57</sys_created_on>
-            <sys_id>9e96b5f683fa52100b30e970deaad31b</sys_id>
+            <sys_created_on>2025-01-08 20:44:08</sys_created_on>
+            <sys_id>9252bc68830316100b30e970deaad34f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Media and Release" display_value="Media and Release" name="x_1593193_raas_media" sys_domain="global" view="Default view">429675f683fa52100b30e970deaad3ec</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-03 15:12:57</sys_updated_on>
+            <sys_updated_on>2025-01-08 20:44:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>release_date</element>
+            <element>x_1593193_raas_Poster.xml</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-03 15:12:57</sys_created_on>
-            <sys_id>9696b5f683fa52100b30e970deaad31c</sys_id>
+            <sys_created_on>2025-01-08 20:44:08</sys_created_on>
+            <sys_id>1252bc68830316100b30e970deaad3a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Poster">e297a02c83cfd2100b30e970deaad369</sys_ui_formatter>
+            <sys_ui_section caption="Media and Release" display_value="Media and Release" name="x_1593193_raas_media" sys_domain="global" view="Default view">429675f683fa52100b30e970deaad3ec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-08 20:44:08</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-08 20:44:08</sys_created_on>
+            <sys_id>9a52bc68830316100b30e970deaad3a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Media and Release" display_value="Media and Release" name="x_1593193_raas_media" sys_domain="global" view="Default view">429675f683fa52100b30e970deaad3ec</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-03 15:12:57</sys_updated_on>
+            <sys_updated_on>2025-01-08 20:44:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
