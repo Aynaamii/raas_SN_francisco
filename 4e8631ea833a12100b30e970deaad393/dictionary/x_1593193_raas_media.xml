@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="710ae13a83ba52100b30e970deaad3d4" label="Media" max_length="40" name="x_1593193_raas_media" type="collection">
         <element label="Gender" max_length="1024" name="gender" reference="x_1593193_raas_genre" type="glide_list"/>
-        <element choice="1" default="0" label="Type" max_length="40" name="type" type="choice">
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Episode" sequence="0" value="e"/>
-                <element inactive_on_update="false" label="Serie" sequence="2" value="s"/>
-                <element inactive_on_update="false" label="Movie" sequence="1" value="m"/>
+                <element inactive_on_update="false" label="Episode" sequence="0" value="episode"/>
+                <element inactive_on_update="false" label="Serie" sequence="2" value="serie"/>
+                <element inactive_on_update="false" label="Movie" sequence="1" value="movie"/>
             </choice>
         </element>
         <element label="Synopsis" max_length="4000" name="synopsis" type="string"/>
+        <element choice="1" default="1" label="Intregation State" max_length="40" name="intregation_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Intregation Sucesses" sequence="400" value="3"/>
+                <element inactive_on_update="false" label="Media not Found" sequence="500" value="7"/>
+                <element inactive_on_update="false" label="Intregation Failure" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="Intregating" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Starting" sequence="100" value="1"/>
+            </choice>
+        </element>
         <element label="category" max_length="40" name="category" type="string"/>
         <element label="Writers" max_length="4000" name="writers" type="string"/>
         <element label="Web Site" max_length="1000" name="web_site" type="url"/>
@@ -16,11 +25,19 @@
         <element default="0" label="Metascore" max_length="40" name="metascore" type="integer"/>
         <element label="IMD Rating" max_length="40" name="imd_rating" type="float"/>
         <element label="Awards" max_length="250" name="awards" type="string"/>
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Complete" sequence="200" value="3"/>
+            </choice>
+        </element>
         <element label="Poster" max_length="1000" name="poster" type="url"/>
         <element default="0" label="Average Rating" max_length="255" name="average_rating" type="float"/>
+        <element label="Intregation erro Messager" max_length="1000" name="intregation_erro_messager" type="string"/>
         <element label="Country" max_length="250" name="country" type="string"/>
         <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
         <element label="Language" max_length="250" name="language" type="string"/>
         <element label="Production" max_length="250" name="production" type="string"/>
+        <element label="Release Year" max_length="4" name="realease_year" type="string"/>
     </element>
 </database>

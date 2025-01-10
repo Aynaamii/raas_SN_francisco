@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Media Review">7b74f1f3833e12100b30e970deaad306</catalog_item>
+        <catalog_variable>IO:dcfd9af383fe12100b30e970deaad374</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-07 13:41:00</sys_created_on>
+        <sys_id>07d78e84830392100b30e970deaad32d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>approval</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_07d78e84830392100b30e970deaad32d</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-07 18:44:37</sys_updated_on>
+        <table/>
+        <ui_policy display_value="show media when media select">7c678e84830392100b30e970deaad325</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>approval</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=07d78e84830392100b30e970deaad32d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</application>
+        <file_path/>
+        <instance_id>8e7383fcdb8ef918199b1729139619cf</instance_id>
+        <instance_name>dev191130</instance_name>
+        <name>catalog_ui_policy_action_07d78e84830392100b30e970deaad32d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Media Review">7b74f1f3833e12100b30e970deaad306</catalog_item><catalog_variable>IO:dcfd9af383fe12100b30e970deaad374</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-07 13:41:00</sys_created_on><sys_id>07d78e84830392100b30e970deaad32d</sys_id><sys_mod_count>4</sys_mod_count><sys_name>approval</sys_name><sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package><sys_policy/><sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope><sys_update_name>catalog_ui_policy_action_07d78e84830392100b30e970deaad32d</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2025-01-07 18:44:37</sys_updated_on><table/><ui_policy display_value="show media when media select">7c678e84830392100b30e970deaad325</ui_policy><value/><value_action>ignore</value_action><variable>approval</variable><variable_set/><visible>true</visible></catalog_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=07d78e84830392100b30e970deaad32d"/></record_update>]]></payload>
+        <payload_hash>703832645</payload_hash>
+        <record_name>approval</record_name>
+        <reverted_from/>
+        <source>b5c9387f837212100b30e970deaad36e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-01-07 18:44:37</sys_created_on>
+        <sys_id>026dc780838792100b30e970deaad3fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1944215455f0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-07 18:44:37</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>c66dc7801587921094ea626ba9389ffd</update_guid>
+        <update_guid_history>c66dc7801587921094ea626ba9389ffd:703832645,7ec94688ea039210f195bf93d34371fc:1667558213,d2e882487f039210ba83140af5940e1e:11708648,65b84e08010392103c090fb321051f2e:5890775,5ae78ac4dc039210368ab9942fdf106b:11708648</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="approval">e00f4b04838792100b30e970deaad3a8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-01-07 18:51:38</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>0a8a32ec096c45009736569a602da351</sys_id>
+        <sys_metadata>07d78e84830392100b30e970deaad32d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approval</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_scope_delete display_value="">00df8a84f0764b58800427cf12bdf624</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_07d78e84830392100b30e970deaad32d</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_07d78e84830392100b30e970deaad32d">026dc780838792100b30e970deaad3fe</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-07 18:51:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
