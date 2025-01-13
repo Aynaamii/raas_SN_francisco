@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>converte_string_in_to_array</internal_name>
-        <label_cache>[{"name":"{{action.string}}","label":"action➛String","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.separetor}}","label":"action➛Separetor","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a8c86523-dcca-4072-b4d6-50d539f8bf2b].array}}","label":"step➛Script step➛Array","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.string}}","label":"action➛String","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"906421e0-c96f-458d-98a9-d745abfd70ef"}},{"name":"{{action.separetor}}","label":"action➛Separetor","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d5158774-0d3a-4f54-8cb1-72eb3a3b9528"}},{"name":"{{step[a8c86523-dcca-4072-b4d6-50d539f8bf2b].array}}","label":"step➛Script step➛Array","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>636eba8d83c712100b30e970deaad3d8</master_snapshot>
         <master_snapshot_digest/>
         <name>Converte String into String Array</name>
@@ -24,14 +24,14 @@
         <outputs/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:06:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cc0df2c983c712100b30e970deaad3fd</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Converte String into String Array</sys_name>
         <sys_overrides/>
         <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_cc0df2c983c712100b30e970deaad3fd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 21:12:29</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:56</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -128,10 +128,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:07</sys_created_on>
         <sys_id>9b6eba8d83c712100b30e970deaad37b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 21:12:29</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:01:09</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9b6eba8d83c712100b30e970deaad37b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -156,13 +156,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:07</sys_created_on>
         <sys_id>9b6eba8d83c712100b30e970deaad3a2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 21:12:29</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:01:09</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-    var array = inputs.string.split(inputs.separator);&#13;
-    array = array.map(item =&gt; item.replace(/^"|"$/g, ""));&#13;
-    outputs.array = array;&#13;
+    outputs.array = inputs.string.toString().split(inputs.separator.toString());&#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -389,17 +387,17 @@
     <sys_hub_step_ext_output action="delete_multiple" query="model=9b6eba8d83c712100b30e970deaad37b^sys_idNOT IN5f6eba8d83c712100b30e970deaad395"/>
     <sys_complex_object action="INSERT_OR_UPDATE">
         <label/>
-        <name>FDd76eba8defc71210b6387259cb810187</name>
+        <name>FD353e3135e0cbd210fb24ba1220f1b9d7</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>4e8631ea833a12100b30e970deaad393</scope_name>
-        <serialized_content>{"FlowDesigner:FDd76eba8defc71210b6387259cb810187":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd76eba8defc71210b6387259cb810187.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Array\",\"mandatory\":\"false\",\"child_name\":\"elemente\",\"uiUniqueId\":\"0fa2a6a5-d372-43eb-998c-46da88d73bc9\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDd76eba8defc71210b6387259cb810187\",\"child_label\":\"Elemente\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d2835c94-da9d-4b90-a9c5-ae3fcca6e180\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD353e3135e0cbd210fb24ba1220f1b9d7":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD353e3135e0cbd210fb24ba1220f1b9d7.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Array\",\"mandatory\":\"false\",\"child_name\":\"Element\",\"uiUniqueId\":\"366a5812-7433-4295-96b8-244e0d4ca36a\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD353e3135e0cbd210fb24ba1220f1b9d7\",\"child_label\":\"Element\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a6a88e62-7493-40c1-b83a-4b0107b7c269\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-10 20:13:07</sys_created_on>
+        <sys_created_on>2025-01-12 23:28:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>9b6eba8d83c712100b30e970deaad387</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_id>f53e313583cbd2100b30e970deaad3d7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -407,14 +405,14 @@
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 21:12:29</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:54</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Elemente,child_name=elemente,child_type=string,child_type_label=String,child_uiUniqueId=d2835c94-da9d-4b90-a9c5-ae3fcca6e180,co_type_name=FDd76eba8defc71210b6387259cb810187,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=0fa2a6a5-d372-43eb-998c-46da88d73bc9</attributes>
+        <attributes>child_label=Element,child_name=Element,child_type=string,child_type_label=String,child_uiUniqueId=a6a88e62-7493-40c1-b83a-4b0107b7c269,co_type_name=FD353e3135e0cbd210fb24ba1220f1b9d7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=366a5812-7433-4295-96b8-244e0d4ca36a</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -473,14 +471,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:07</sys_created_on>
         <sys_id>5f6eba8d83c712100b30e970deaad395</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:07</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -557,7 +555,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>String</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Converte String into String Array">cc0df2c983c712100b30e970deaad3fd</model>
         <model_id>cc0df2c983c712100b30e970deaad3fd</model_id>
@@ -582,14 +580,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:06</sys_created_on>
         <sys_id>8f6eb6c983c712100b30e970deaad398</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:06</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -641,7 +639,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>Separetor</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Converte String into String Array">cc0df2c983c712100b30e970deaad3fd</model>
         <model_id>cc0df2c983c712100b30e970deaad3fd</model_id>
@@ -666,14 +664,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:06</sys_created_on>
         <sys_id>db6eba8d83c712100b30e970deaad368</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:06</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -690,17 +688,17 @@
     <sys_hub_action_output action="delete_multiple" query="model=cc0df2c983c712100b30e970deaad3fd^sys_idNOT IN6b6eba8d83c712100b30e970deaad3ac,a36eba8d83c712100b30e970deaad3b1,e36eba8d83c712100b30e970deaad3a7"/>
     <sys_complex_object action="INSERT_OR_UPDATE">
         <label/>
-        <name>FDe36eba8dc0c712104d06bf4e515efda6</name>
+        <name>FDb53e313574cbd210a47508feb2033ce6</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>4e8631ea833a12100b30e970deaad393</scope_name>
-        <serialized_content>{"FlowDesigner:FDe36eba8dc0c712104d06bf4e515efda6":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe36eba8dc0c712104d06bf4e515efda6.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Array\",\"mandatory\":\"true\",\"child_name\":\"elemente\",\"uiUniqueId\":\"8aab8957-5b8b-44ce-8551-580ecf89fb0c\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDe36eba8dc0c712104d06bf4e515efda6\",\"child_label\":\"Elemente\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"4577ed81-f73c-455f-b841-2960e9f51cf6\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDb53e313574cbd210a47508feb2033ce6":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb53e313574cbd210a47508feb2033ce6.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Array\",\"mandatory\":\"true\",\"child_name\":\"Element\",\"uiUniqueId\":\"470fc1ab-4d51-4fc6-9c51-3e05b1ceac91\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDb53e313574cbd210a47508feb2033ce6\",\"child_label\":\"Element\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d2aa7a30-c5d5-45f6-bac7-1fa2d64a9512\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-10 20:13:07</sys_created_on>
+        <sys_created_on>2025-01-12 23:28:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a76eba8d83c712100b30e970deaad3a6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_id>793e313583cbd2100b30e970deaad3e6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -708,14 +706,14 @@
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 21:12:29</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:54</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Elemente,child_name=elemente,child_type=string,child_type_label=String,child_uiUniqueId=4577ed81-f73c-455f-b841-2960e9f51cf6,co_type_name=FDe36eba8dc0c712104d06bf4e515efda6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=8aab8957-5b8b-44ce-8551-580ecf89fb0c</attributes>
+        <attributes>child_label=Element,child_name=Element,child_type=string,child_type_label=String,child_uiUniqueId=d2aa7a30-c5d5-45f6-bac7-1fa2d64a9512,co_type_name=FDb53e313574cbd210a47508feb2033ce6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=470fc1ab-4d51-4fc6-9c51-3e05b1ceac91</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -758,7 +756,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_cc0df2c983c712100b30e970deaad3fd</name>
         <next_element/>
-        <order>2</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -776,14 +774,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:07</sys_created_on>
         <sys_id>6b6eba8d83c712100b30e970deaad3ac</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:07</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -863,14 +861,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:08</sys_created_on>
         <sys_id>a36eba8d83c712100b30e970deaad3b1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 21:12:29</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -932,7 +930,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_cc0df2c983c712100b30e970deaad3fd</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -950,14 +948,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:07</sys_created_on>
         <sys_id>e36eba8d83c712100b30e970deaad3a7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:07</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1107,17 +1105,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Converte String into String Array">cc0df2c983c712100b30e970deaad3fd</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"487efa8d83c712100b30e970deaad37c","name":"plan","plan_signature":null}}</plan>
-        <snapshot>e414cb45830b12100b30e970deaad3eb</snapshot>
+        <snapshot>91364e7d83cbd2100b30e970deaad3bc</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>487efa8d83c712100b30e970deaad37c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:37:48</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:56</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1134,7 +1132,7 @@
         <description/>
         <flow_priority/>
         <internal_name>converte_string_into_string_array</internal_name>
-        <label_cache>[{"name":"{{action.string}}","label":"action➛String","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.separetor}}","label":"action➛Separetor","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a8c86523-dcca-4072-b4d6-50d539f8bf2b].array}}","label":"step➛Script step➛Array","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.string}}","label":"action➛String","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"906421e0-c96f-458d-98a9-d745abfd70ef"}},{"name":"{{action.separetor}}","label":"action➛Separetor","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"d5158774-0d3a-4f54-8cb1-72eb3a3b9528"}},{"name":"{{step[a8c86523-dcca-4072-b4d6-50d539f8bf2b].array}}","label":"step➛Script step➛Array","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>Converte String into String Array</name>
         <natlang/>
@@ -1147,7 +1145,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>636eba8d83c712100b30e970deaad3d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1155,7 +1153,7 @@
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:08</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1244,10 +1242,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:08</sys_created_on>
         <sys_id>b36eba8d83c712100b30e970deaad3e8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:37:47</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:01:11</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b36eba8d83c712100b30e970deaad3e8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1258,13 +1256,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_id>376efa8d83c712100b30e970deaad324</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:37:47</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:01:11</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-    let array = inputs.string.split(inputs.separator);&#13;
-    array = array.map(item =&gt; item.replace(/^"|"$/g, ""));&#13;
-    outputs.array = array;&#13;
+    outputs.array = inputs.string.toString().split(inputs.separator.toString());&#13;
 })(inputs, outputs);&#13;
 </value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1508,14 +1504,14 @@
         <name>FDbb6eba8d86c71210f02ddf2b528227f3</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>4e8631ea833a12100b30e970deaad393</scope_name>
-        <serialized_content>{"FlowDesigner:FDbb6eba8d86c71210f02ddf2b528227f3":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDbb6eba8d86c71210f02ddf2b528227f3.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Array\",\"mandatory\":\"false\",\"child_name\":\"elemente\",\"uiUniqueId\":\"0fa2a6a5-d372-43eb-998c-46da88d73bc9\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDbb6eba8d86c71210f02ddf2b528227f3\",\"child_label\":\"Elemente\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d2835c94-da9d-4b90-a9c5-ae3fcca6e180\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDbb6eba8d86c71210f02ddf2b528227f3":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDbb6eba8d86c71210f02ddf2b528227f3.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Array\",\"mandatory\":\"false\",\"child_name\":\"Element\",\"uiUniqueId\":\"366a5812-7433-4295-96b8-244e0d4ca36a\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDbb6eba8d86c71210f02ddf2b528227f3\",\"child_label\":\"Element\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"a6a88e62-7493-40c1-b83a-4b0107b7c269\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7f6eba8d83c712100b30e970deaad3f3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1523,14 +1519,14 @@
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:37:47</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:55</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Elemente,child_name=elemente,child_type=string,child_type_label=String,child_uiUniqueId=d2835c94-da9d-4b90-a9c5-ae3fcca6e180,co_type_name=FDbb6eba8d86c71210f02ddf2b528227f3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=0fa2a6a5-d372-43eb-998c-46da88d73bc9</attributes>
+        <attributes>child_label=Element,child_name=Element,child_type=string,child_type_label=String,child_uiUniqueId=a6a88e62-7493-40c1-b83a-4b0107b7c269,co_type_name=FDbb6eba8d86c71210f02ddf2b528227f3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=366a5812-7433-4295-96b8-244e0d4ca36a</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1589,14 +1585,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_id>bb6eba8d83c712100b30e970deaad3f4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:09</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1673,7 +1669,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>Separetor</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Converte String into String Array">636eba8d83c712100b30e970deaad3d8</model>
         <model_id>636eba8d83c712100b30e970deaad3d8</model_id>
@@ -1698,14 +1694,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:08</sys_created_on>
         <sys_id>a36eba8d83c712100b30e970deaad3e0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:08</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1757,7 +1753,7 @@
         <hint/>
         <internal_type display_value="String">string</internal_type>
         <label>String</label>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Converte String into String Array">636eba8d83c712100b30e970deaad3d8</model>
         <model_id>636eba8d83c712100b30e970deaad3d8</model_id>
@@ -1782,14 +1778,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:08</sys_created_on>
         <sys_id>a76eba8d83c712100b30e970deaad3db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:08</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1809,14 +1805,14 @@
         <name>FD3b6efa8d31c71210f333a2ff00f53c27</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>4e8631ea833a12100b30e970deaad393</scope_name>
-        <serialized_content>{"FlowDesigner:FD3b6efa8d31c71210f333a2ff00f53c27":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3b6efa8d31c71210f333a2ff00f53c27.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Array\",\"mandatory\":\"true\",\"child_name\":\"elemente\",\"uiUniqueId\":\"8aab8957-5b8b-44ce-8551-580ecf89fb0c\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD3b6efa8d31c71210f333a2ff00f53c27\",\"child_label\":\"Elemente\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"4577ed81-f73c-455f-b841-2960e9f51cf6\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD3b6efa8d31c71210f333a2ff00f53c27":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3b6efa8d31c71210f333a2ff00f53c27.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Array\",\"mandatory\":\"true\",\"child_name\":\"Element\",\"uiUniqueId\":\"470fc1ab-4d51-4fc6-9c51-3e05b1ceac91\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD3b6efa8d31c71210f333a2ff00f53c27\",\"child_label\":\"Element\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"d2aa7a30-c5d5-45f6-bac7-1fa2d64a9512\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fb6efa8d83c712100b30e970deaad327</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1824,14 +1820,14 @@
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:37:47</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:55</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Elemente,child_name=elemente,child_type=string,child_type_label=String,child_uiUniqueId=4577ed81-f73c-455f-b841-2960e9f51cf6,co_type_name=FD3b6efa8d31c71210f333a2ff00f53c27,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=8aab8957-5b8b-44ce-8551-580ecf89fb0c</attributes>
+        <attributes>child_label=Element,child_name=Element,child_type=string,child_type_label=String,child_uiUniqueId=d2aa7a30-c5d5-45f6-bac7-1fa2d64a9512,co_type_name=FD3b6efa8d31c71210f333a2ff00f53c27,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=470fc1ab-4d51-4fc6-9c51-3e05b1ceac91</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1874,7 +1870,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_636eba8d83c712100b30e970deaad3d8</name>
         <next_element/>
-        <order>2</order>
+        <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1892,14 +1888,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_id>376efa8d83c712100b30e970deaad32d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:09</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1961,7 +1957,7 @@
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_636eba8d83c712100b30e970deaad3d8</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1979,14 +1975,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_id>3b6efa8d83c712100b30e970deaad328</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:13:09</sys_updated_on>
+        <sys_updated_on>2025-01-12 23:28:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2066,14 +2062,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-10 20:13:09</sys_created_on>
         <sys_id>3f6efa8d83c712100b30e970deaad331</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-10 20:37:47</sys_updated_on>
+        <sys_updated_on>2025-01-13 00:02:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
