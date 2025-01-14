@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 14:07:38</sys_created_on>
+        <sys_id>bb67df58834bd2100b30e970deaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra.x_1593193_raas.user</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_security_acl display_value="x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra">0166db94834bd2100b30e970deaad3d9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_bb67df58834bd2100b30e970deaad329</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 14:07:38</sys_updated_on>
+        <sys_user_role display_value="x_1593193_raas.user" name="x_1593193_raas.user">528671ea833a12100b30e970deaad34a</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</application>
+        <file_path/>
+        <instance_id>8e7383fcdb8ef918199b1729139619cf</instance_id>
+        <instance_name>dev191130</instance_name>
+        <name>sys_security_acl_role_bb67df58834bd2100b30e970deaad329</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-08 14:07:38</sys_created_on><sys_id>bb67df58834bd2100b30e970deaad329</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra.x_1593193_raas.user</sys_name><sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package><sys_policy/><sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope><sys_security_acl display_value="x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra">0166db94834bd2100b30e970deaad3d9</sys_security_acl><sys_update_name>sys_security_acl_role_bb67df58834bd2100b30e970deaad329</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-08 14:07:38</sys_updated_on><sys_user_role display_value="x_1593193_raas.user" name="x_1593193_raas.user">528671ea833a12100b30e970deaad34a</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1552442816</payload_hash>
+        <record_name>x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra.x_1593193_raas.user</record_name>
+        <reverted_from/>
+        <source>b5c9387f837212100b30e970deaad36e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-08 14:07:38</sys_created_on>
+        <sys_id>1a97db98834bd2100b30e970deaad3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194463e0b370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-08 14:07:38</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>1e97db982a4bd210c7dc10daee4fd0c1</update_guid>
+        <update_guid_history>1e97db982a4bd210c7dc10daee4fd0c1:-1552442816</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra.x_1593193_raas.user">294e0f5a830b96100b30e970deaad3fc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 18:34:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>047f82a4b6b143149e444baca74f7bc4</sys_id>
+        <sys_metadata>bb67df58834bd2100b30e970deaad329</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra.x_1593193_raas.user</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_parent display_value="x_1593193_raas_m2m_x_1593193_ra_x_1593193_ra">0166db94834bd2100b30e970deaad3d9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_scope_delete display_value="">00df8a84f0764b58800427cf12bdf624</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_bb67df58834bd2100b30e970deaad329</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_bb67df58834bd2100b30e970deaad329">1a97db98834bd2100b30e970deaad3c2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 18:34:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

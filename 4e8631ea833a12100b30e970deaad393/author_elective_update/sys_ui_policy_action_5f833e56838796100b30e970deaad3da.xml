@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>average_rating</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 16:38:23</sys_created_on>
+        <sys_id>5f833e56838796100b30e970deaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>average_rating</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5f833e56838796100b30e970deaad3da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 16:38:23</sys_updated_on>
+        <table>x_1593193_raas_media</table>
+        <ui_policy display_value="all fields is read only when state is complete">d413b256838796100b30e970deaad35e</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=5f833e56838796100b30e970deaad3da"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</application>
+        <file_path/>
+        <instance_id>8e7383fcdb8ef918199b1729139619cf</instance_id>
+        <instance_name>dev191130</instance_name>
+        <name>sys_ui_policy_action_5f833e56838796100b30e970deaad3da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>average_rating</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-14 16:38:23</sys_created_on><sys_id>5f833e56838796100b30e970deaad3da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>average_rating</sys_name><sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package><sys_policy/><sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope><sys_update_name>sys_ui_policy_action_5f833e56838796100b30e970deaad3da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-14 16:38:23</sys_updated_on><table>x_1593193_raas_media</table><ui_policy display_value="all fields is read only when state is complete">d413b256838796100b30e970deaad35e</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=5f833e56838796100b30e970deaad3da"/></record_update>]]></payload>
+        <payload_hash>-243392741</payload_hash>
+        <record_name>average_rating</record_name>
+        <reverted_from/>
+        <source>b5c9387f837212100b30e970deaad36e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 16:38:23</sys_created_on>
+        <sys_id>30a3be56838796100b30e970deaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19465ae36f70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 16:38:23</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>34a3be5677879610867d6ec960b41ef0</update_guid>
+        <update_guid_history>34a3be5677879610867d6ec960b41ef0:-243392741</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 17:52:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>407e94d3be404dde9c57d4df2f490024</sys_id>
+        <sys_metadata>5f833e56838796100b30e970deaad3da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>average_rating</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_parent display_value="all fields is read only when state is complete">d413b256838796100b30e970deaad35e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_scope_delete display_value="">00df8a84f0764b58800427cf12bdf624</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_5f833e56838796100b30e970deaad3da</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_5f833e56838796100b30e970deaad3da">30a3be56838796100b30e970deaad3f1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 17:52:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
