@@ -2,6 +2,13 @@
     <element db_object_id="0f79eef283fe52100b30e970deaad344" extends="task" label="Suggestion" max_length="40" name="x_1593193_raas_suggestion" type="collection">
         <element label="Release Year" max_length="4" name="release_year" type="string"/>
         <element label="Title" max_length="250" name="title" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Series" sequence="200" value="series"/>
+                <element inactive_on_update="false" label="Movie" sequence="100" value="movie"/>
+                <element inactive="true" inactive_on_update="true" label="Episode" sequence="300" value="episode"/>
+            </choice>
+        </element>
         <element label="Media" max_length="32" name="media" reference="x_1593193_raas_media" type="reference"/>
         <element label="Reproval Reason" max_length="4000" name="reproval_reason" type="string"/>
     </element>

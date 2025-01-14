@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>true</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Chose the media type">935d1e0e830356100b30e970deaad356</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 20:29:48</sys_created_on>
+        <sys_id>d7fe9242834356100b30e970deaad38e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Episode</sys_name>
+        <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
+        <sys_update_name>question_choice_d7fe9242834356100b30e970deaad38e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 20:39:27</sys_updated_on>
+        <text>Episode</text>
+        <value>episode</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=d7fe9242834356100b30e970deaad38e"/>
+</record_update>
