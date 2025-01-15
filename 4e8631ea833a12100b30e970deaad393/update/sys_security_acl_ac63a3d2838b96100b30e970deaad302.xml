@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
-        <admin_overrides>false</admin_overrides>
+        <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
-        <applies_to table="x_1593193_raas_media.*">state=1^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        <applies_to table="x_1593193_raas_media.*">stateIN1,7^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </applies_to>
         <condition/>
         <decision_type>allow</decision_type>
-        <description/>
+        <description>Allow write for all fields in x_1593193_raas_media if the record matches the criteria (stateIN1,7^EQ), for users with role x_1593193_raas.administrador.</description>
         <local_or_existing>Local</local_or_existing>
         <name>x_1593193_raas_media.*</name>
         <operation display_value="write">write</operation>
@@ -17,14 +17,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-14 20:07:52</sys_created_on>
         <sys_id>ac63a3d2838b96100b30e970deaad302</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_1593193_raas_media.*</sys_name>
         <sys_package display_value="Raas - Francisco" source="x_1593193_raas">4e8631ea833a12100b30e970deaad393</sys_package>
         <sys_policy/>
         <sys_scope display_value="Raas - Francisco">4e8631ea833a12100b30e970deaad393</sys_scope>
         <sys_update_name>sys_security_acl_ac63a3d2838b96100b30e970deaad302</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 20:07:52</sys_updated_on>
+        <sys_updated_on>2025-01-15 20:43:39</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
